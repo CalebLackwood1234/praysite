@@ -1,0 +1,1697 @@
+{
+	"info": {
+		"_postman_id": "e3ac6cfa-2819-4097-97a2-724fd378c011",
+		"name": "Curso MEVN",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "categoria",
+			"item": [
+				{
+					"name": "http://localhost:3000/api/categoria/add",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "nombre",
+									"value": "Papeles",
+									"type": "text"
+								},
+								{
+									"key": "descripcion",
+									"value": "Todos los papeles de oficina",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/categoria/add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"categoria",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/api/categoria/list",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/categoria/list?valor=",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"categoria",
+								"list"
+							],
+							"query": [
+								{
+									"key": "valor",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/api/categoria/query",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/categoria/query?_id=5f34728e4e41695af0641fe1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"categoria",
+								"query"
+							],
+							"query": [
+								{
+									"key": "_id",
+									"value": "5f34728e4e41695af0641fe1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/api/categoria/update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "nombre",
+									"value": "Muebles de oficina 2",
+									"type": "text"
+								},
+								{
+									"key": "descripcion",
+									"value": "Todos los muebles de oficina 2",
+									"type": "text"
+								},
+								{
+									"key": "_id",
+									"value": "5f34728e4e41695af0641fe1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/categoria/update",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"categoria",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/api/categoria/remove",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "_id",
+									"value": "5f3471e34e41695af0641fdf",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/categoria/remove",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"categoria",
+								"remove"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/api/categoria/deactivate",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "_id",
+									"value": "5f34728e4e41695af0641fe1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/categoria/deactivate",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"categoria",
+								"deactivate"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/api/categoria/activate",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "_id",
+									"value": "5f34728e4e41695af0641fe1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/categoria/activate",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"categoria",
+								"activate"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "usuario",
+			"item": [
+				{
+					"name": "http://localhost:3000/api/usuario/add",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "rol",
+									"value": "vendedor",
+									"type": "text"
+								},
+								{
+									"key": "nombre",
+									"value": "Alex Britto",
+									"type": "text"
+								},
+								{
+									"key": "tipo_documento",
+									"value": "DNI",
+									"type": "text"
+								},
+								{
+									"key": "num_documento",
+									"value": "162233442",
+									"type": "text"
+								},
+								{
+									"key": "direccion",
+									"value": "mi casa12",
+									"type": "text"
+								},
+								{
+									"key": "telefono",
+									"value": "11-1111-1133",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "vendedor@prueba.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "vendedor",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/usuario/add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"usuario",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/api/usuario/list",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjM1ZTY0NzZkZTJiMjIyOTQyNTk3YjMiLCJpYXQiOjE1OTc4ODgzOTgsImV4cCI6MTU5Nzk3NDc5OH0.pBBAGdqlIpg99YdjGrkgk4Skr0oal_MdwWxaS3onb2I",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/api/usuario/list",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"usuario",
+								"list"
+							],
+							"query": [
+								{
+									"key": "valor",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/api/usuario/query",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/usuario/query?_id=5f35e6476de2b222942597b3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"usuario",
+								"query"
+							],
+							"query": [
+								{
+									"key": "_id",
+									"value": "5f35e6476de2b222942597b3"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/api/usuario/update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "rol",
+									"value": "administrador",
+									"type": "text"
+								},
+								{
+									"key": "nombre",
+									"value": "Juan Pepe2",
+									"type": "text"
+								},
+								{
+									"key": "tipo_documento",
+									"value": "DNI",
+									"type": "text"
+								},
+								{
+									"key": "num_documento",
+									"value": "11223344",
+									"type": "text"
+								},
+								{
+									"key": "direccion",
+									"value": "mi casa",
+									"type": "text"
+								},
+								{
+									"key": "telefono",
+									"value": "11-1111-1111",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "admin@prueba.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "admin",
+									"type": "text"
+								},
+								{
+									"key": "_id",
+									"value": "5f35e6476de2b222942597b3",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/usuario/update",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"usuario",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/api/usuario/remove",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "_id",
+									"value": "5f3471e34e41695af0641fdf",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/usuario/remove",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"usuario",
+								"remove"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/api/usuario/deactivate",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "_id",
+									"value": "5f35e6476de2b222942597b3",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/usuario/deactivate",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"usuario",
+								"deactivate"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/api/usuario/activate",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "_id",
+									"value": "5f35e6476de2b222942597b3",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/usuario/activate",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"usuario",
+								"activate"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/api/usuario/login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "email",
+									"value": "admin@prueba.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "admin",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "almacenero@prueba.com",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "password",
+									"value": "almacenero",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/usuario/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"usuario",
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "persona",
+			"item": [
+				{
+					"name": "http://localhost:3000/api/persona/add",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjM1ZTY0NzZkZTJiMjIyOTQyNTk3YjMiLCJpYXQiOjE1OTc4MDExNTgsImV4cCI6MTU5Nzg4NzU1OH0.SUkcNzpYwSVsd9ELPJtE8AHopnVYx7JKsPLewvikpY4",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "tipo_persona",
+									"value": "Proveedor",
+									"type": "text"
+								},
+								{
+									"key": "nombre",
+									"value": "Alex Brittoooo2",
+									"type": "text"
+								},
+								{
+									"key": "tipo_documento",
+									"value": "DNI",
+									"type": "text"
+								},
+								{
+									"key": "num_documento",
+									"value": "16223232",
+									"type": "text"
+								},
+								{
+									"key": "direccion",
+									"value": "mi casa111",
+									"type": "text"
+								},
+								{
+									"key": "telefono",
+									"value": "11-1111-114",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "proveedor2@prueba.com",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/persona/add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"persona",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/api/persona/list",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjM1ZTY0NzZkZTJiMjIyOTQyNTk3YjMiLCJpYXQiOjE1OTc4MDExNTgsImV4cCI6MTU5Nzg4NzU1OH0.SUkcNzpYwSVsd9ELPJtE8AHopnVYx7JKsPLewvikpY4",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/api/persona/list?valor=",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"persona",
+								"list"
+							],
+							"query": [
+								{
+									"key": "valor",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/api/persona/listClientes",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjM1ZTY0NzZkZTJiMjIyOTQyNTk3YjMiLCJpYXQiOjE1OTc4MDExNTgsImV4cCI6MTU5Nzg4NzU1OH0.SUkcNzpYwSVsd9ELPJtE8AHopnVYx7JKsPLewvikpY4",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/api/persona/listClientes?valor=",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"persona",
+								"listClientes"
+							],
+							"query": [
+								{
+									"key": "valor",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/api/persona/listProveedores",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"type": "text",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjM1ZTY0NzZkZTJiMjIyOTQyNTk3YjMiLCJpYXQiOjE1OTc4MDExNTgsImV4cCI6MTU5Nzg4NzU1OH0.SUkcNzpYwSVsd9ELPJtE8AHopnVYx7JKsPLewvikpY4"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/api/persona/listProveedores?valor=",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"persona",
+								"listProveedores"
+							],
+							"query": [
+								{
+									"key": "valor",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/api/persona/query",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjM1ZTY0NzZkZTJiMjIyOTQyNTk3YjMiLCJpYXQiOjE1OTc4MDExNTgsImV4cCI6MTU5Nzg4NzU1OH0.SUkcNzpYwSVsd9ELPJtE8AHopnVYx7JKsPLewvikpY4",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/api/persona/query?_id=5f3c830ddf3d5405bc27b381",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"persona",
+								"query"
+							],
+							"query": [
+								{
+									"key": "_id",
+									"value": "5f3c830ddf3d5405bc27b381"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/api/persona/update",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "token",
+								"type": "text",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjM1ZTY0NzZkZTJiMjIyOTQyNTk3YjMiLCJpYXQiOjE1OTc4MDExNTgsImV4cCI6MTU5Nzg4NzU1OH0.SUkcNzpYwSVsd9ELPJtE8AHopnVYx7JKsPLewvikpY4"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "tipo_persona",
+									"value": "Cliente",
+									"type": "text"
+								},
+								{
+									"key": "nombre",
+									"value": "Alexia Brittoooo",
+									"type": "text"
+								},
+								{
+									"key": "tipo_documento",
+									"value": "DNI",
+									"type": "text"
+								},
+								{
+									"key": "num_documento",
+									"value": "16223232",
+									"type": "text"
+								},
+								{
+									"key": "direccion",
+									"value": "mi casa111",
+									"type": "text"
+								},
+								{
+									"key": "telefono",
+									"value": "11-1111-114",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "clienteeeee@prueba.com",
+									"type": "text"
+								},
+								{
+									"key": "_id",
+									"value": "5f3c830ddf3d5405bc27b381",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/persona/update",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"persona",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/api/persona/remove",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "token",
+								"type": "text",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjM1ZTY0NzZkZTJiMjIyOTQyNTk3YjMiLCJpYXQiOjE1OTc4MDExNTgsImV4cCI6MTU5Nzg4NzU1OH0.SUkcNzpYwSVsd9ELPJtE8AHopnVYx7JKsPLewvikpY4"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "_id",
+									"value": "5f3c8595deb46b21dc459cf5",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/persona/remove",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"persona",
+								"remove"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/api/persona/deactivate",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjM1ZTY0NzZkZTJiMjIyOTQyNTk3YjMiLCJpYXQiOjE1OTc4MDExNTgsImV4cCI6MTU5Nzg4NzU1OH0.SUkcNzpYwSVsd9ELPJtE8AHopnVYx7JKsPLewvikpY4",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "_id",
+									"value": "5f3c85c2deb46b21dc459cf6",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/persona/deactivate",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"persona",
+								"deactivate"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/api/persona/activate",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "token",
+								"type": "text",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjM1ZTY0NzZkZTJiMjIyOTQyNTk3YjMiLCJpYXQiOjE1OTc4MDExNTgsImV4cCI6MTU5Nzg4NzU1OH0.SUkcNzpYwSVsd9ELPJtE8AHopnVYx7JKsPLewvikpY4"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "_id",
+									"value": "5f3c85c2deb46b21dc459cf6",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/persona/activate",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"persona",
+								"activate"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "ingreso",
+			"item": [
+				{
+					"name": "http://localhost:3000/api/ingreso/add",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjM1ZTY0NzZkZTJiMjIyOTQyNTk3YjMiLCJpYXQiOjE1OTc4MDExNTgsImV4cCI6MTU5Nzg4NzU1OH0.SUkcNzpYwSVsd9ELPJtE8AHopnVYx7JKsPLewvikpY4",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"usuario\":{\"_id\":\"5f35e6476de2b222942597b3\"},\r\n    \"persona\":{\"_id\":\"5f3c830ddf3d5405bc27b381\"},\r\n    \"tipo_comprobante\": \"FACTURA\",\r\n    \"serie_comprobante\": \"001\",\r\n    \"num_comprobante\": \"00003\",\r\n    \"impuesto\": \"0.18\",\r\n    \"total\": \"120\",\r\n    \"detalles\": [{\r\n        \"_id\": \"5f35d93744ffec14acec8a48\",\r\n        \"articulo\": \"Impresora LX 200 Epson\",\r\n        \"cantidad\": \"2\",\r\n        \"precio\": \"30\"\r\n    },{\r\n        \"_id\": \"5f35d98144ffec14acec8a4a\",\r\n        \"articulo\": \"Teclado Multifuncional Micronics 2\",\r\n        \"cantidad\": \"2\",\r\n        \"precio\": \"30\"\r\n    }]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/ingreso/add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"ingreso",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/api/ingreso/list",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjM1ZTY0NzZkZTJiMjIyOTQyNTk3YjMiLCJpYXQiOjE1OTc4ODgzOTgsImV4cCI6MTU5Nzk3NDc5OH0.pBBAGdqlIpg99YdjGrkgk4Skr0oal_MdwWxaS3onb2I",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/api/ingreso/list?valor=",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"ingreso",
+								"list"
+							],
+							"query": [
+								{
+									"key": "valor",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/api/ingreso/grafico12Meses",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"type": "text",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjM1ZTY0NzZkZTJiMjIyOTQyNTk3YjMiLCJpYXQiOjE1OTc4ODgzOTgsImV4cCI6MTU5Nzk3NDc5OH0.pBBAGdqlIpg99YdjGrkgk4Skr0oal_MdwWxaS3onb2I"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/api/ingreso/grafico12Meses",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"ingreso",
+								"grafico12Meses"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/api/ingreso/consultaFechas",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjM1ZTY0NzZkZTJiMjIyOTQyNTk3YjMiLCJpYXQiOjE1OTc4ODgzOTgsImV4cCI6MTU5Nzk3NDc5OH0.pBBAGdqlIpg99YdjGrkgk4Skr0oal_MdwWxaS3onb2I",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/api/ingreso/consultaFechas?start=2020-08-18T02:55:41.231Z&end=2020-08-20T02:55:41.231Z",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"ingreso",
+								"consultaFechas"
+							],
+							"query": [
+								{
+									"key": "start",
+									"value": "2020-08-18T02:55:41.231Z"
+								},
+								{
+									"key": "end",
+									"value": "2020-08-20T02:55:41.231Z"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/api/ingreso/query",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"type": "text",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjM1ZTY0NzZkZTJiMjIyOTQyNTk3YjMiLCJpYXQiOjE1OTc4MDExNTgsImV4cCI6MTU5Nzg4NzU1OH0.SUkcNzpYwSVsd9ELPJtE8AHopnVYx7JKsPLewvikpY4"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/api/ingreso/query?_id=5f3c94adf64bfb3b48b05bff",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"ingreso",
+								"query"
+							],
+							"query": [
+								{
+									"key": "_id",
+									"value": "5f3c94adf64bfb3b48b05bff"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/api/ingreso/deactivate",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "token",
+								"type": "text",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjM1ZTY0NzZkZTJiMjIyOTQyNTk3YjMiLCJpYXQiOjE1OTc4MDExNTgsImV4cCI6MTU5Nzg4NzU1OH0.SUkcNzpYwSVsd9ELPJtE8AHopnVYx7JKsPLewvikpY4"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "_id",
+									"value": "5f3c94adf64bfb3b48b05bff",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/ingreso/deactivate",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"ingreso",
+								"deactivate"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/api/ingreso/activate",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "token",
+								"type": "text",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjM1ZTY0NzZkZTJiMjIyOTQyNTk3YjMiLCJpYXQiOjE1OTc4MDExNTgsImV4cCI6MTU5Nzg4NzU1OH0.SUkcNzpYwSVsd9ELPJtE8AHopnVYx7JKsPLewvikpY4"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "_id",
+									"value": "5f3c94adf64bfb3b48b05bff",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/ingreso/activate",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"ingreso",
+								"activate"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "venta",
+			"item": [
+				{
+					"name": "http://localhost:3000/api/venta/add",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjM1ZTY0NzZkZTJiMjIyOTQyNTk3YjMiLCJpYXQiOjE1OTc4MDExNTgsImV4cCI6MTU5Nzg4NzU1OH0.SUkcNzpYwSVsd9ELPJtE8AHopnVYx7JKsPLewvikpY4",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"usuario\":{\"_id\":\"5f35e6476de2b222942597b3\"},\r\n    \"persona\":{\"_id\":\"5f3c830ddf3d5405bc27b381\"},\r\n    \"tipo_comprobante\": \"FACTURA\",\r\n    \"serie_comprobante\": \"001\",\r\n    \"num_comprobante\": \"00003\",\r\n    \"impuesto\": \"0.18\",\r\n    \"total\": \"120\",\r\n    \"detalles\": [{\r\n        \"_id\": \"5f35d93744ffec14acec8a48\",\r\n        \"articulo\": \"Impresora LX 200 Epson\",\r\n        \"cantidad\": \"2\",\r\n        \"precio\": \"30\",\r\n        \"descuento\": \"10\"\r\n    },{\r\n        \"_id\": \"5f35d98144ffec14acec8a4a\",\r\n        \"articulo\": \"Teclado Multifuncional Micronics 2\",\r\n        \"cantidad\": \"2\",\r\n        \"precio\": \"30\",\r\n        \"descuento\": \"10\"\r\n    }]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/venta/add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"venta",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/api/venta/list",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjM1ZTY0NzZkZTJiMjIyOTQyNTk3YjMiLCJpYXQiOjE1OTc4ODgzOTgsImV4cCI6MTU5Nzk3NDc5OH0.pBBAGdqlIpg99YdjGrkgk4Skr0oal_MdwWxaS3onb2I",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/api/venta/list?valor=",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"venta",
+								"list"
+							],
+							"query": [
+								{
+									"key": "valor",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/api/venta/grafico12Meses",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjM1ZTY0NzZkZTJiMjIyOTQyNTk3YjMiLCJpYXQiOjE1OTc4ODgzOTgsImV4cCI6MTU5Nzk3NDc5OH0.pBBAGdqlIpg99YdjGrkgk4Skr0oal_MdwWxaS3onb2I",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/api/venta/grafico12Meses",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"venta",
+								"grafico12Meses"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/api/venta/query",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjM1ZTY0NzZkZTJiMjIyOTQyNTk3YjMiLCJpYXQiOjE1OTc4MDExNTgsImV4cCI6MTU5Nzg4NzU1OH0.SUkcNzpYwSVsd9ELPJtE8AHopnVYx7JKsPLewvikpY4",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/api/venta/query?_id=5f3dd2250c509725f4c85b7d",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"venta",
+								"query"
+							],
+							"query": [
+								{
+									"key": "_id",
+									"value": "5f3dd2250c509725f4c85b7d"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/api/venta/deactivate",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "token",
+								"type": "text",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjM1ZTY0NzZkZTJiMjIyOTQyNTk3YjMiLCJpYXQiOjE1OTc4MDExNTgsImV4cCI6MTU5Nzg4NzU1OH0.SUkcNzpYwSVsd9ELPJtE8AHopnVYx7JKsPLewvikpY4"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "_id",
+									"value": "5f3dd2250c509725f4c85b7d",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/venta/deactivate",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"venta",
+								"deactivate"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/api/venta/activate",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "token",
+								"type": "text",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjM1ZTY0NzZkZTJiMjIyOTQyNTk3YjMiLCJpYXQiOjE1OTc4MDExNTgsImV4cCI6MTU5Nzg4NzU1OH0.SUkcNzpYwSVsd9ELPJtE8AHopnVYx7JKsPLewvikpY4"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "_id",
+									"value": "5f3dd2250c509725f4c85b7d",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/venta/activate",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"venta",
+								"activate"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "articulo",
+			"item": [
+				{
+					"name": "http://localhost:3000/api/articulo/add",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "categoria",
+									"value": "5f346d8c8ea2a333cca7ae32",
+									"type": "text"
+								},
+								{
+									"key": "codigo",
+									"value": "111113",
+									"type": "text"
+								},
+								{
+									"key": "nombre",
+									"value": "Teclado Multifuncional Micronics",
+									"type": "text"
+								},
+								{
+									"key": "descripcion",
+									"value": "Teclado con la enie",
+									"type": "text"
+								},
+								{
+									"key": "precio_venta",
+									"value": "40",
+									"type": "text"
+								},
+								{
+									"key": "stock",
+									"value": "20",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/articulo/add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"articulo",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/api/articulo/list",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjM1ZTY0NzZkZTJiMjIyOTQyNTk3YjMiLCJpYXQiOjE1OTc4MDExNTgsImV4cCI6MTU5Nzg4NzU1OH0.SUkcNzpYwSVsd9ELPJtE8AHopnVYx7JKsPLewvikpY4",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/api/articulo/list?valor=",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"articulo",
+								"list"
+							],
+							"query": [
+								{
+									"key": "valor",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/api/articulo/query",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/articulo/query?_id=5f35d93744ffec14acec8a48",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"articulo",
+								"query"
+							],
+							"query": [
+								{
+									"key": "_id",
+									"value": "5f35d93744ffec14acec8a48"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/api/articulo/update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "categoria",
+									"value": "5f346d8c8ea2a333cca7ae32",
+									"type": "text"
+								},
+								{
+									"key": "codigo",
+									"value": "111112",
+									"type": "text"
+								},
+								{
+									"key": "nombre",
+									"value": "Teclado Multifuncional Micronics 2",
+									"type": "text"
+								},
+								{
+									"key": "descripcion",
+									"value": "Teclado con la enie 2",
+									"type": "text"
+								},
+								{
+									"key": "precio_venta",
+									"value": "40",
+									"type": "text"
+								},
+								{
+									"key": "stock",
+									"value": "20",
+									"type": "text"
+								},
+								{
+									"key": "_id",
+									"value": "5f35d98144ffec14acec8a4a",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/articulo/update",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"articulo",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/api/articulo/remove",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "_id",
+									"value": "5f35dafb9d25c02b6cca040b",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/articulo/remove",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"articulo",
+								"remove"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/api/articulo/deactivate",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "_id",
+									"value": "5f35d98144ffec14acec8a4a",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/articulo/deactivate",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"articulo",
+								"deactivate"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/api/articulo/activate",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "_id",
+									"value": "5f35d98144ffec14acec8a4a",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/articulo/activate",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"articulo",
+								"activate"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

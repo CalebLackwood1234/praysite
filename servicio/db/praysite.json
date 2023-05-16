@@ -1,0 +1,2023 @@
+{
+	"info": {
+		"_postman_id": "d65cfcea-ec39-4c7c-ac36-ca354fe8b89d",
+		"name": "praysite",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "deslogueado",
+			"item": [
+				{
+					"name": "deslogueado/registrar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "nick",
+									"value": "pehuen",
+									"type": "text"
+								},
+								{
+									"key": "nombre",
+									"value": "pehuen pernigottti",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "ppernigotti@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "pass",
+									"value": "ppernigotti",
+									"type": "text"
+								},
+								{
+									"key": "fechaNacimiento",
+									"value": "1989-03-29",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/praysite/servicio/deslogueado/registrar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"praysite",
+								"servicio",
+								"deslogueado",
+								"registrar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deslogueado/registrar2",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "nick",
+									"value": "juanpablo",
+									"type": "text"
+								},
+								{
+									"key": "nombre",
+									"value": "juanpablo",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "juanpablo@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "pass",
+									"value": "juanpablo",
+									"type": "text"
+								},
+								{
+									"key": "fechaNacimiento",
+									"value": "1989-03-29",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/praysite/servicio/deslogueado/registrar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"praysite",
+								"servicio",
+								"deslogueado",
+								"registrar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deslogueado/verificarEmail",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "micaela@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "codigo",
+									"value": "efb8ac98c8863fe28948c7df0ba89a44",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/praysite/servicio/deslogueado/verificarEmail",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"praysite",
+								"servicio",
+								"deslogueado",
+								"verificarEmail"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deslogueado/cambiarEmail",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "ppernigottinuevo@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "codigo",
+									"value": "05412c5cda62e47f44b58570ac7d6105",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/praysite/servicio/deslogueado/cambiarEmail",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"praysite",
+								"servicio",
+								"deslogueado",
+								"cambiarEmail"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deslogueado/solicitarBlanqueoPassword",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "ppernigotti@gmail.com",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/praysite/servicio/deslogueado/solicitarBlanqueoPassword",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"praysite",
+								"servicio",
+								"deslogueado",
+								"solicitarBlanqueoPassword"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deslogueado/blanquearPassword",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "ppernigotti@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "codigo",
+									"value": "773d9e5f8183a5d9605b328358618abb",
+									"type": "text"
+								},
+								{
+									"key": "pass",
+									"value": "ppernigotti",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/praysite/servicio/deslogueado/blanquearPassword",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"praysite",
+								"servicio",
+								"deslogueado",
+								"blanquearPassword"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deslogueado/loguear - Admin",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "ppernigotti@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "pass",
+									"value": "ppernigotti",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/praysite/servicio/deslogueado/loguear",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"praysite",
+								"servicio",
+								"deslogueado",
+								"loguear"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deslogueado/loguear - Lider",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "juanpablo@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "pass",
+									"value": "ppernigotti2",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/praysite/servicio/deslogueado/loguear",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"praysite",
+								"servicio",
+								"deslogueado",
+								"loguear"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deslogueado/loguear - Lider2",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "micaela@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "pass",
+									"value": "micaela",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/praysite/servicio/deslogueado/loguear",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"praysite",
+								"servicio",
+								"deslogueado",
+								"loguear"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deslogueado/loguear - Lider3",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "maria@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "pass",
+									"value": "maria",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/praysite/servicio/deslogueado/loguear",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"praysite",
+								"servicio",
+								"deslogueado",
+								"loguear"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deslogueado/loguear - Deboto",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "lucas@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "pass",
+									"value": "lucas",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/praysite/servicio/deslogueado/loguear",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"praysite",
+								"servicio",
+								"deslogueado",
+								"loguear"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "logueado",
+			"item": [
+				{
+					"name": "logueado/desloguear",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "http://localhost/praysite/servicio/logueado/desloguear",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"praysite",
+								"servicio",
+								"logueado",
+								"desloguear"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "logueado/checkear",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "http://localhost/praysite/servicio/logueado/checkear",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"praysite",
+								"servicio",
+								"logueado",
+								"checkear"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "administrar",
+			"item": [
+				{
+					"name": "administrador/listarUsuarios",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "pagina",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "nick",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "nombre",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "tipoUsuario",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "estaVerificado",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "estaBloqueado",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "fechaCreacionDesde",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "fechaCreacionHasta",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/praysite/servicio/administrador/listarUsuarios",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"praysite",
+								"servicio",
+								"administrador",
+								"listarUsuarios"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "administrador/setTipoUsuario",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "idUsuario",
+									"value": "96",
+									"type": "text"
+								},
+								{
+									"key": "tipoUsuario",
+									"value": "2",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/praysite/servicio/administrador/setTipoUsuario",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"praysite",
+								"servicio",
+								"administrador",
+								"setTipoUsuario"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "administrador/setEstaBloqueado",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "idUsuario",
+									"value": "91",
+									"type": "text"
+								},
+								{
+									"key": "estaBloqueado",
+									"value": "0",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/praysite/servicio/administrador/setEstaBloqueado",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"praysite",
+								"servicio",
+								"administrador",
+								"setEstaBloqueado"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "administrador/recuperarCuentaEmail",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "idUsuario",
+									"value": "91",
+									"type": "text"
+								},
+								{
+									"key": "nuevoEmail",
+									"value": "ppernigotti@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "verificar",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/praysite/servicio/administrador/recuperarCuentaEmail",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"praysite",
+								"servicio",
+								"administrador",
+								"recuperarCuentaEmail"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "administrador/recuperarCuentaPassword",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "idUsuario",
+									"value": "91",
+									"type": "text"
+								},
+								{
+									"key": "nuevoPassword",
+									"value": "ppernigotti2",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/praysite/servicio/administrador/recuperarCuentaPassword",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"praysite",
+								"servicio",
+								"administrador",
+								"recuperarCuentaPassword"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "administrador/listarPaginas",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "idLider",
+									"value": "91",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/praysite/servicio/administrador/listarPaginas",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"praysite",
+								"servicio",
+								"administrador",
+								"listarPaginas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "administrador/setBloqueoPaginas",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "idPagina",
+									"value": "8",
+									"type": "text"
+								},
+								{
+									"key": "bloqueo",
+									"value": "0",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/praysite/servicio/administrador/setBloqueoPaginas",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"praysite",
+								"servicio",
+								"administrador",
+								"setBloqueoPaginas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "administrador/listarTipoSuscripcion",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "http://localhost/praysite/servicio/administrador/listarTipoSuscripcion",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"praysite",
+								"servicio",
+								"administrador",
+								"listarTipoSuscripcion"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "administrador/addTipoSuscripcion",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "nivel",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "nombre",
+									"value": "Pago_1",
+									"type": "text"
+								},
+								{
+									"key": "precio",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "descripcion",
+									"value": "Suscripción paga de 1 dólar",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/praysite/servicio/administrador/addTipoSuscripcion",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"praysite",
+								"servicio",
+								"administrador",
+								"addTipoSuscripcion"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "administrador/modificarTipoSuscripcion",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "idSuscripcion",
+									"value": "4",
+									"type": "text"
+								},
+								{
+									"key": "nombre",
+									"value": "Pago_1",
+									"type": "text"
+								},
+								{
+									"key": "precio",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "descripcion",
+									"value": "Suscripción paga de 1 dólar",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/praysite/servicio/administrador/modificarTipoSuscripcion",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"praysite",
+								"servicio",
+								"administrador",
+								"modificarTipoSuscripcion"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "administrador/eliminarTipoSuscripcion",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "idSuscripcion",
+									"value": "4",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/praysite/servicio/administrador/eliminarTipoSuscripcion",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"praysite",
+								"servicio",
+								"administrador",
+								"eliminarTipoSuscripcion"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "pagina",
+			"item": [
+				{
+					"name": "pagina/crearPagina",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "nombre",
+									"value": "Pagina de maria 2",
+									"type": "text"
+								},
+								{
+									"key": "descripcion",
+									"value": "Pagina orientada a mis queridos debotos de maria 2",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/praysite/servicio/pagina/crearPagina",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"praysite",
+								"servicio",
+								"pagina",
+								"crearPagina"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "pagina/eliminarPagina",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "idPagina",
+									"value": "7",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/praysite/servicio/pagina/eliminarPagina",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"praysite",
+								"servicio",
+								"pagina",
+								"eliminarPagina"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "pagina/listarPaginas",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "http://localhost/praysite/servicio/pagina/listarPaginas",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"praysite",
+								"servicio",
+								"pagina",
+								"listarPaginas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "pagina/getPagina",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "idPagina",
+									"value": "10",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/praysite/servicio/pagina/getPagina",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"praysite",
+								"servicio",
+								"pagina",
+								"getPagina"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "pagina/setNombrePagina",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "idPagina",
+									"value": "10",
+									"type": "text"
+								},
+								{
+									"key": "nombre",
+									"value": "Micaela actualizada",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/praysite/servicio/pagina/setNombrePagina",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"praysite",
+								"servicio",
+								"pagina",
+								"setNombrePagina"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "pagina/setDescripcionPagina",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "idPagina",
+									"value": "6",
+									"type": "text"
+								},
+								{
+									"key": "descripcion",
+									"value": "Pagina orientada a mis queridos debotos",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/praysite/servicio/pagina/setDescripcionPagina",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"praysite",
+								"servicio",
+								"pagina",
+								"setDescripcionPagina"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "pagina/setSuscripcionMinimaPagina",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "idPagina",
+									"value": "10",
+									"type": "text"
+								},
+								{
+									"key": "suscripcion",
+									"value": "2",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/praysite/servicio/pagina/setSuscripcionMinimaPagina",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"praysite",
+								"servicio",
+								"pagina",
+								"setSuscripcionMinimaPagina"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "pagina/crearPublicacion",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "idPagina",
+									"value": "6",
+									"type": "text"
+								},
+								{
+									"key": "mensaje",
+									"value": "ultima novedad de novedades",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/praysite/servicio/pagina/crearPublicacion",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"praysite",
+								"servicio",
+								"pagina",
+								"crearPublicacion"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "pagina/listarPublicaciones",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "pagina",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "idPagina",
+									"value": "10",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/praysite/servicio/pagina/listarPublicaciones",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"praysite",
+								"servicio",
+								"pagina",
+								"listarPublicaciones"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "pagina/setPublicacion",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "idPagina",
+									"value": "6",
+									"type": "text"
+								},
+								{
+									"key": "idPublicacion",
+									"value": "19",
+									"type": "text"
+								},
+								{
+									"key": "mensaje",
+									"value": "Hola a todos4 - modificado1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/praysite/servicio/pagina/setPublicacion",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"praysite",
+								"servicio",
+								"pagina",
+								"setPublicacion"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "pagina/eliminarPublicacion",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "idPagina",
+									"value": "6",
+									"type": "text"
+								},
+								{
+									"key": "idPublicacion",
+									"value": "18",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/praysite/servicio/pagina/eliminarPublicacion",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"praysite",
+								"servicio",
+								"pagina",
+								"eliminarPublicacion"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "pagina/likePublicacion",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "idPagina",
+									"value": "10",
+									"type": "text"
+								},
+								{
+									"key": "idPublicacion",
+									"value": "34",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/praysite/servicio/pagina/likePublicacion",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"praysite",
+								"servicio",
+								"pagina",
+								"likePublicacion"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "pagina/dislikePublicacion",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "idPagina",
+									"value": "10",
+									"type": "text"
+								},
+								{
+									"key": "idPublicacion",
+									"value": "34",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/praysite/servicio/pagina/dislikePublicacion",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"praysite",
+								"servicio",
+								"pagina",
+								"dislikePublicacion"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "lider",
+			"item": [
+				{
+					"name": "lider/getDatos",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "http://localhost/praysite/servicio/lider/getDatos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"praysite",
+								"servicio",
+								"lider",
+								"getDatos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "lider/listarTipoRelacionChats",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "http://localhost/praysite/servicio/lider/listarTipoRelacionChats",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"praysite",
+								"servicio",
+								"lider",
+								"listarTipoRelacionChats"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "lider/setTipoRelacionChats",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "idTipoRelacionChats",
+									"value": "2",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/praysite/servicio/lider/setTipoRelacionChats",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"praysite",
+								"servicio",
+								"lider",
+								"setTipoRelacionChats"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "lider/setBiografia",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "biografia",
+									"value": "Nuevo biografia del nuevo lider, esto es para que lo conozcan mejor",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/praysite/servicio/lider/setBiografia",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"praysite",
+								"servicio",
+								"lider",
+								"setBiografia"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "lider/listarTipoSuscripcion",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "http://localhost/praysite/servicio/lider/listarTipoSuscripcion",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"praysite",
+								"servicio",
+								"lider",
+								"listarTipoSuscripcion"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "lider/listarTipoSuscripcionHabilitadas",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "http://localhost/praysite/servicio/lider/listarTipoSuscripcionHabilitadas",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"praysite",
+								"servicio",
+								"lider",
+								"listarTipoSuscripcionHabilitadas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "lider/addTipoSuscripcionHabilitadas",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "tipo",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "nombrePersonalizado",
+									"value": "Seccion Premium Maria",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/praysite/servicio/lider/addTipoSuscripcionHabilitadas",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"praysite",
+								"servicio",
+								"lider",
+								"addTipoSuscripcionHabilitadas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "lider/borrarTipoSuscripcionHabilitadas",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "tipo",
+									"value": "2",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/praysite/servicio/lider/borrarTipoSuscripcionHabilitadas",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"praysite",
+								"servicio",
+								"lider",
+								"borrarTipoSuscripcionHabilitadas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "lider/modificarTipoSuscripcionHabilitadas",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "tipo",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "nombrePersonalizado",
+									"value": "Seccin Amigos Premium",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/praysite/servicio/lider/modificarTipoSuscripcionHabilitadas",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"praysite",
+								"servicio",
+								"lider",
+								"modificarTipoSuscripcionHabilitadas"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "seguir",
+			"item": [
+				{
+					"name": "seguir/listarLideres",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "pagina",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "busqueda",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/praysite/servicio/seguir/listarLideres",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"praysite",
+								"servicio",
+								"seguir",
+								"listarLideres"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "seguir/listarPaginasLider",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "idLider",
+									"value": "96",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/praysite/servicio/seguir/listarPaginasLider",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"praysite",
+								"servicio",
+								"seguir",
+								"listarPaginasLider"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "seguir/seguirPagina",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "idLider",
+									"value": "91",
+									"type": "text"
+								},
+								{
+									"key": "idPagina",
+									"value": "8",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/praysite/servicio/seguir/seguirPagina",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"praysite",
+								"servicio",
+								"seguir",
+								"seguirPagina"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "seguir/dejarSeguirPagina",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "idLider",
+									"value": "96",
+									"type": "text"
+								},
+								{
+									"key": "idPagina",
+									"value": "10",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/praysite/servicio/seguir/dejarSeguirPagina",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"praysite",
+								"servicio",
+								"seguir",
+								"dejarSeguirPagina"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "seguir/listarSiguiendo",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "http://localhost/praysite/servicio/seguir/listarSiguiendo",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"praysite",
+								"servicio",
+								"seguir",
+								"listarSiguiendo"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "seguir/detalleLider",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "idLider",
+									"value": "95",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/praysite/servicio/seguir/detalleLider",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"praysite",
+								"servicio",
+								"seguir",
+								"detalleLider"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "seguir/listarTipoSuscripcionHabilitadas",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "idLider",
+									"value": "95",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/praysite/servicio/seguir/listarTipoSuscripcionHabilitadas",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"praysite",
+								"servicio",
+								"seguir",
+								"listarTipoSuscripcionHabilitadas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "seguir/listarPublicacionesPagina",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "idLider",
+									"value": "96",
+									"type": "text"
+								},
+								{
+									"key": "idPagina",
+									"value": "9",
+									"type": "text"
+								},
+								{
+									"key": "idPrimero",
+									"value": "3",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "idUltimo",
+									"value": "57",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/praysite/servicio/seguir/listarPublicacionesPagina",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"praysite",
+								"servicio",
+								"seguir",
+								"listarPublicacionesPagina"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "seguir/likePublicacion",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "idLider",
+									"value": "96",
+									"type": "text"
+								},
+								{
+									"key": "idPagina",
+									"value": "9",
+									"type": "text"
+								},
+								{
+									"key": "idPublicacion",
+									"value": "31",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/praysite/servicio/seguir/likePublicacion",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"praysite",
+								"servicio",
+								"seguir",
+								"likePublicacion"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "seguir/dislikePublicacion",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "idLider",
+									"value": "96",
+									"type": "text"
+								},
+								{
+									"key": "idPagina",
+									"value": "9",
+									"type": "text"
+								},
+								{
+									"key": "idPublicacion",
+									"value": "31",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/praysite/servicio/seguir/dislikePublicacion",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"praysite",
+								"servicio",
+								"seguir",
+								"dislikePublicacion"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,41 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<title>{{asunto}}</title>
+<style type="text/css">
+    body { font-family: Whitney,Helvetica Neue,Helvetica,Arial,Lucida Grande,sans-serif; color: 000; margin: 0px 0px; }
+    .fondo { background-color:#f9f9f9; padding: 0px; }
+    .contenedor { margin: 0px auto; width: 640px; }
+    header { background-color: #EEE; text-align: center; padding: 30px; border-radius: 30px 30px;}
+    .seccion { padding: 40px; background-color: #FFF; margin: 0px; color: #747f8d; font-size: 13px; font-weight: normal; }
+    h1 { color: #4f545c; font-size: 20px; font-weight: normal; }
+    h2 { color: #4f545c; font-size: 18px; font-weight: bold;   text-align: center; }
+    h3 { color: #737f8d; font-size: 16px; font-weight: normal; }
+    .codigo { margin: 30px auto; background-color: #DDD; font-size: 16px; width: 300px; padding: 10px; text-align: center; font-weight: bold; border-radius: 5px 20px; }
+    hr { height: 2px; background: #DDD; border-style: none; margin: 40px 30px; }
+    footer { color: #99aab5; font-size: 12px; text-align: center; padding: 30px 0px; }
+</style>
+</head>
+<body>
+<div class="fondo">
+<div class="contenedor">
+    <header>
+        <img src="https://multigame.com.ar/img/praysite_email.png" alt="PraySite.com" width='280' height='110'>
+    </header>
+    <div class="seccion">
+        <h1>Hola {{alias}},</h1>
+        <h3>Recibimos una solicitud para cambiar el email de PraySite.com del usuario "{{nick}}".</h3>
+        <h3>Para continuar con la misma ingresar al siguiente boton.</h3>
+        <a href="http://localhost/praysite/pagina/#/cambiarEmail?email={{email}}&codigo={{codigo}}"><div class="codigo">CAMBIAR EMAIL</div></a>
+		<h3>En caso de no haber sido tú quien lo solicito, por favor ponerse en contacto con soporte.</h3>
+        <hr>
+        ¿Necesitas ayuda? <a href="mailto:info@praysite.com">Contacta a nuestro equipo de soporte</a>. <br>
+    </div>
+    <footer>
+        Enviado por PraySite.com
+    </footer>
+</div>
+</div>
+</body>
+</html>

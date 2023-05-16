@@ -1,0 +1,767 @@
+{
+	"info": {
+		"_postman_id": "4a94cd8a-20b7-4bc6-b650-2a31bd718746",
+		"name": "multigame",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "sesion",
+			"item": [
+				{
+					"name": "sesion/cerrar",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/multigame/servicio/sesion/cerrar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"multigame",
+								"servicio",
+								"sesion",
+								"cerrar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "sesion/cerrarTodos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/multigame/servicio/sesion/cerrarTodos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"multigame",
+								"servicio",
+								"sesion",
+								"cerrarTodos"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "deslogueado",
+			"item": [
+				{
+					"name": "deslogueado/registrarIniciar",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "http://localhost/multigame/servicio/deslogueado/registrarIniciar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"multigame",
+								"servicio",
+								"deslogueado",
+								"registrarIniciar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deslogueado/registrar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "ppernigotti@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "alias",
+									"value": "ppernigotti",
+									"type": "text"
+								},
+								{
+									"key": "pass",
+									"value": "ppernigotti",
+									"type": "text"
+								},
+								{
+									"key": "capcha",
+									"value": "596426",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/multigame/servicio/deslogueado/registrar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"multigame",
+								"servicio",
+								"deslogueado",
+								"registrar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deslogueado/chequearCodigoEmailSolicitar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "ppernigotti@gmail.com",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/multigame/servicio/deslogueado/chequearCodigoEmailSolicitar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"multigame",
+								"servicio",
+								"deslogueado",
+								"chequearCodigoEmailSolicitar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deslogueado/chequearCodigoEmailIniciar",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "http://localhost/multigame/servicio/deslogueado/chequearCodigoEmailIniciar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"multigame",
+								"servicio",
+								"deslogueado",
+								"chequearCodigoEmailIniciar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deslogueado/chequearCodigoEmail",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "ppernigotti@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "codigo",
+									"value": "1e93d5",
+									"type": "text"
+								},
+								{
+									"key": "capcha",
+									"value": "962896",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/multigame/servicio/deslogueado/chequearCodigoEmail",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"multigame",
+								"servicio",
+								"deslogueado",
+								"chequearCodigoEmail"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deslogueado/recuperarPasswordSolicitar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "ppernigotti@gmail.com",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/multigame/servicio/deslogueado/recuperarPasswordSolicitar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"multigame",
+								"servicio",
+								"deslogueado",
+								"recuperarPasswordSolicitar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deslogueado/recuperarPasswordIniciar",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "http://localhost/multigame/servicio/deslogueado/recuperarPasswordIniciar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"multigame",
+								"servicio",
+								"deslogueado",
+								"recuperarPasswordIniciar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deslogueado/recuperarPassword",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "ppernigotti@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "pass",
+									"value": "ppernigotti",
+									"type": "text"
+								},
+								{
+									"key": "codigo",
+									"value": "ee3a11",
+									"type": "text"
+								},
+								{
+									"key": "capcha",
+									"value": "625837",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/multigame/servicio/deslogueado/recuperarPassword",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"multigame",
+								"servicio",
+								"deslogueado",
+								"recuperarPassword"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deslogueado/desbloquearUsuarioSolicitar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "ppernigotti@gmail.com",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/multigame/servicio/deslogueado/desbloquearUsuarioSolicitar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"multigame",
+								"servicio",
+								"deslogueado",
+								"desbloquearUsuarioSolicitar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deslogueado/desbloquearUsuarioIniciar",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "http://localhost/multigame/servicio/deslogueado/desbloquearUsuarioIniciar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"multigame",
+								"servicio",
+								"deslogueado",
+								"desbloquearUsuarioIniciar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deslogueado/desbloquearUsuario",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "ppernigotti@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "codigo",
+									"value": "d4f569",
+									"type": "text"
+								},
+								{
+									"key": "capcha",
+									"value": "246236",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/multigame/servicio/deslogueado/desbloquearUsuario",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"multigame",
+								"servicio",
+								"deslogueado",
+								"desbloquearUsuario"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deslogueado/logearIniciar",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "http://localhost/multigame/servicio/deslogueado/loguearIniciar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"multigame",
+								"servicio",
+								"deslogueado",
+								"loguearIniciar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deslogueado/logear",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "ppernigotti@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "pass",
+									"value": "ppernigotti",
+									"type": "text"
+								},
+								{
+									"key": "capcha",
+									"value": "906718",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/multigame/servicio/deslogueado/loguear",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"multigame",
+								"servicio",
+								"deslogueado",
+								"loguear"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deslogueado/verificarEmail",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "ppernigotti@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "hash",
+									"value": "8578830eb0d79bb0a616ba702c266b491dd52e3ba3c1e54a6e3099ef2d2b36efea06f07b2ff8a98100ee26e196a1c80c9883af898268c9dc4a5705c79e98bbfb",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost/multigame/servicio/deslogueado/verificarEmail",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"multigame",
+								"servicio",
+								"deslogueado",
+								"verificarEmail"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "pruebas",
+			"item": [
+				{
+					"name": "deslogueado/capcha",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/multigame/servicio/deslogueado/capcha",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"multigame",
+								"servicio",
+								"deslogueado",
+								"capcha"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "sesion/borrarSesion",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/multigame/servicio/sesion/borrarSesion",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"multigame",
+								"servicio",
+								"sesion",
+								"borrarSesion"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "sesion/validar",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/multigame/servicio/sesion/validar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"multigame",
+								"servicio",
+								"sesion",
+								"validar"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "saveGameOffline",
+			"item": [
+				{
+					"name": "save.php",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "key",
+									"value": "GolfinWolverineByMy",
+									"type": "text"
+								},
+								{
+									"key": "value",
+									"value": "textoGuardado",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://multigame.com.ar/saveGameOffline/save.php",
+							"protocol": "https",
+							"host": [
+								"multigame",
+								"com",
+								"ar"
+							],
+							"path": [
+								"saveGameOffline",
+								"save.php"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "save2.php",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "key",
+									"value": "GolfinWolverineByMy",
+									"type": "text"
+								},
+								{
+									"key": "value",
+									"value": "textoGuardado",
+									"type": "text"
+								},
+								{
+									"key": "seed",
+									"value": "golfeando",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost/multigame/juegos/save2/guardar.php",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"multigame",
+								"juegos",
+								"save2",
+								"guardar.php"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "load.php",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "key",
+									"value": "GolfinWolverineByMy",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://multigame.com.ar/saveGameOffline/load.php",
+							"protocol": "https",
+							"host": [
+								"multigame",
+								"com",
+								"ar"
+							],
+							"path": [
+								"saveGameOffline",
+								"load.php"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "load2.php",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "key",
+									"value": "GolfinWolverineByMy",
+									"type": "text"
+								},
+								{
+									"key": "value",
+									"value": "18qtqaaprZikxcfG1A==",
+									"type": "text"
+								},
+								{
+									"key": "seed",
+									"value": "golfeando",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost/multigame/juegos/save2/load.php",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"multigame",
+								"juegos",
+								"save2",
+								"load.php"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
